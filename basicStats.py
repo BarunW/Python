@@ -4,12 +4,7 @@ import datetime as dt
 mean = 0
 median = 0
 def lets_sort(col):
-	for value in range(0,len(col)):
-		for n_value in range(value+1,len(col)):
-			if col[value] > col[n_value]:
-				temp = col[n_value]
-				col[n_value] = col[value]
-				col[value] = temp
+	sort(col)
 	return col	
 # function for calculating mean
 def calMean(col):
